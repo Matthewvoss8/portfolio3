@@ -1,0 +1,21 @@
+---
+title: "Writeup"
+author: "Matthew Voss"
+date: "4/9/2022"
+output: pdf_document
+---
+To run the app: shiny::runGitHub(repo = "Matthewvoss8/portfolio3","rstudio")
+The actual code: https://github.com/Matthewvoss8/portfolio3/blob/main/app.R
+
+Also Warning: The app has a pretty big file that I delimited to just 100,000 rows so it may take a moment for it to load.
+
+## Discussion:
+
+The fundamental question I wanted to investigate in this project was determining where large portions of vehicles are receiving fines. I think this project is effective in answering this question, because it allows users to not only find these clusters but also delimit the data and explore other aspects of the fine. 
+
+I think my design effectively supports my fundamental question by providing users access to both location and more specifics with the support of my heat map. It allows the user to further understand the data in comparison to other aspects of the fine's features. I think my color pallet is also helpful, because it is continuous from the map to the heat map so the user can easily make findings through both of the plots. One of the trade offs for my design was the inability to use a brush between my map and heat map. I was planning on using a brush with a gg map plot, but the plot was having problems with shiny. I also wanted to create some other type of plot, but felt that there were too many variables and thought the heat map was the best route. 
+
+I found that very cheap tickets, I used 26-29, are usually found in the northern side of Philadelphia and are all very common. Weekends generally have very few tickets being issued. I also found it surprising that there was a small cluster far west from Philadelphia in the data set. Some more general observations that can really only be seen with my visualization is how many tickets are issued in areas close to Thomas Jefferson University and other clusters in the center of Philadelphia. I think these graph's helped me understand the data more, because you can sort of assume that there will be a large amount of clusters in the center of a major metropolitan area. But you wouldn't really know based on price where to find these clusters of tickets unless you combed through all 100,000 rows.
+
+For the map, it was really difficult to use a ggmap plot and I could not figure out how to update the points. Luckily leaflet is pretty simple so it really came down to just choosing the icon. The heat map just required a few pivots and remove some of the non-day and type of fine columns. I also put the dates in reverse order since the heat map put the first value on the bottom.
+

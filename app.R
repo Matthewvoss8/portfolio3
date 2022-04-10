@@ -26,8 +26,7 @@ mapper<-function(df){
     addTiles() %>% 
     setView(lng=-75.1652, lat = 39.9526,zoom = 10) %>% 
     addProviderTiles(providers$Esri.WorldTopoMap) %>% 
-    addAwesomeMarkers(data = df,
-                      clusterOptions = markerClusterOptions()) 
+    addMarkers(clusterOptions = markerClusterOptions()) 
 }
 
 heatmapShiny<-function(df){ #the heat map seems to be glitching and you may need to just replace this plot with some traditional gg
