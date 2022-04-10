@@ -19,3 +19,7 @@ I found that very cheap tickets, I used 26-29, are usually found in the northern
 
 For the map, it was really difficult to use a ggmap plot and I could not figure out how to update the points. Luckily leaflet is pretty simple so it really came down to just choosing the icon. The heat map just required a few pivots and remove some of the non-day and type of fine columns. I also put the dates in reverse order since the heat map put the first value on the bottom.
 
+## Bibliography:
+
+Philadelphia Parking Violations. *tidytuesday* [Data set]. December 3, 2019.
+https://github.com/rfordatascience/tidytuesday/tree/master/data/2019/2019-12-03
