@@ -1,7 +1,7 @@
 ---
-title: "Writeup"
+title: "Portfolio 3: Philadelphia Tickets"
 author: "Matthew Voss"
-date: "4/9/2022"
+date: "4/10/2022"
 output: pdf_document
 ---
 To run the app: shiny::runGitHub(repo = "Matthewvoss8/portfolio3","rstudio")
